@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+:root {
+  --color-1: #3a506b;
+  --color-2: #5abfbd;
+  --color-3: #70ffea;
+  --background: #0b132b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: #0b132b;
+  font-family: 'Poppins', sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  /* border-bottom: 1px solid #453886; */
+  color: var(--background);
+  /* padding-bottom: 0.25em; */
+  padding: 0;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  padding-bottom: 0.3em;
+  text-decoration: none;
+}
+
+::selection {
+  color: var(--background);
+  background: var(--color-3);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-2);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-3);
+}
+
+.underline {
+  height: 2px;
+  width: 200px;
+  background-color: var(--color-3);
+}
+
+.fa-html5 {
+  color: #e44d26;
+  padding: 10px;
+}
+.fa-html5:hover {
+  color: #e44d26;
+}
+
+.fa-css3-alt {
+  color: #139fda;
+  padding: 10px;
+}
+.fa-css3-alt:hover {
+  color: #139fda;
+}
+
+.fa-font-awesome {
+  color: #139fda;
+  padding: 10px;
+}
+.fa-font-awesome:hover {
+  color: #139fda;
+}
+.fa-react:hover {
+  color: #5edef3;
+}
+.fa-node-js:hover {
+  color: #509941;
+}
+
+.fab {
+  transition: 0.3s all ease-in-out;
+}
+
+.fab:hover {
+  transform: scale(1.4);
 }

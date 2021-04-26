@@ -1,0 +1,69 @@
+#skills {
+  height: 800px;
+  background: url(../img/skills.png) center center/cover;
+}
+
+.special-skills {
+  height: 170px;
+  width: 500px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.special-skills h2 {
+  margin: auto;
+  transform: rotate(-75deg);
+  transition: all 0.3s ease-in;
+  border-bottom: 5px solid var(--color-3);
+}
+
+.special-skills h2:hover {
+  transform: rotate(0deg);
+  /* box-shadow: 9px 8px 35px 1px rgba(112, 255, 234, 0.75);
+  -webkit-box-shadow: 9px 8px 35px 1px rgba(112, 255, 234, 0.75);
+  -moz-box-shadow: 9px 8px 35px 1px rgba(112, 255, 234, 0.75); */
+}
+
+.skills {
+  /* background-color: thistle; */
+  height: auto;
+  margin-top: 20px;
+}
+
+.skills-container {
+  /* background-color: tomato; */
+
+  width: auto;
+  margin: 10px auto;
+}
+.progress {
+  height: 10px;
+
+  margin: auto 0;
+  /* border: solid 1.5px; */
+  border-right: none;
+  /* border-color: #6fffe9; */
+  position: relative;
+  z-index: 0;
+  background-color: transparent;
+  /* border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px; */
+}
+
+.skill {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  /* background-color: white; */
+  z-index: 1;
+}
+.scrollAnim {
+  height: 100%;
+  background-color: var(--color-3);
+  position: absolute;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
