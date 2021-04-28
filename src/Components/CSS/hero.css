@@ -47,8 +47,9 @@ b {
 /* Goal */
 
 #goal {
-  height: 300px;
+  height: 400px;
   padding: 20px;
+  margin: 20px 0;
 }
 .goal h2 {
   font-size: 4rem;
@@ -56,8 +57,11 @@ b {
   text-transform: uppercase;
 }
 .heading {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .goal {
@@ -142,8 +146,8 @@ figure.snip0029 {
   margin: auto;
   min-width: 620px;
   max-width: 710px;
-  max-height: 520px;
-  width: 400px;
+  max-height: 820px;
+  width: 420px;
   background: #000000;
 }
 figure.snip0029 * {

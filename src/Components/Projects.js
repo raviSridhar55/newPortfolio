@@ -2,27 +2,36 @@ import React from 'react';
 import './CSS/hero.css';
 import Project1 from './img/1.png';
 import Project2 from './img/4.png';
-import medibondLogo from './img/MediBondIcon.png';
-
+import ScrollAnimation from 'react-animate-on-scroll';
+import { Link } from 'react-router-dom';
 const Projects = () => {
   return (
-    <div id='project' className='container projects-container'>
+    <ScrollAnimation
+      animateIn='animate__pulse'
+      duration={2}
+      id='project'
+      // animateOnce={true}
+      className='container projects-container'>
       <span className='title'>
         <h1 className='title-r'>Projects</h1>
       </span>
-
-      <div className='projects'>
+      <h2>Some Project I made...</h2>
+      <ScrollAnimation
+        animateIn='animate__fadeInUp'
+        animateOnce={true}
+        duration={0.5}
+        className='projects'>
         <figure className='snip0029'>
           <img src={Project1} alt='sample10' />
           <figcaption>
             <div>
-              <a>
+              <a href='/'>
                 <i class='fab fa-react'></i>
               </a>
-              <a>
+              <a href='/'>
                 <i class='fab fa-css3-alt'></i>
               </a>
-              <a>
+              <a href='/'>
                 <i class='fab fa-node-js'></i>
               </a>
             </div>
@@ -41,10 +50,10 @@ const Projects = () => {
           <img src={Project2} alt='sample10' />
           <figcaption>
             <div>
-              <a>
+              <a href='/'>
                 <i class='fab fa-html5'></i>
               </a>
-              <a>
+              <a href='/'>
                 <i class='fab fa-css3-alt'></i>
               </a>
             </div>
@@ -56,14 +65,14 @@ const Projects = () => {
             </h2>
           </figcaption>
         </figure>
-      </div>
+      </ScrollAnimation>
 
       <div className='and-more'>
         <h4>
-          <a>And More.....</a>
+          <Link to='/projects-main'>Click Here for More.....</Link>
         </h4>
       </div>
-    </div>
+    </ScrollAnimation>
   );
 };
 

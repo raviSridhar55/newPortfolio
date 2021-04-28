@@ -4,11 +4,16 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const Skills = () => {
   return (
-    <div id='skills'>
+    <ScrollAnimation
+      animateIn='animate__pulse'
+      // animateOnce={true}
+      duration={2}
+      className='skills-main'>
       <div className='container'>
         <span className='title'>
           <h1 className='title-r'>Skills</h1>
         </span>
+        <h2>My Skills...</h2>
         <div className='special-skills'>
           <h2>⚪ HTML5</h2>
           <h2>⚪ CSS3</h2>
@@ -94,9 +99,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-
-      <div style={{ height: '200px' }}></div>
-    </div>
+    </ScrollAnimation>
   );
 };
 
