@@ -87,5 +87,28 @@
 }
 .sign-off {
   padding: 5px;
-  margin-bottom: 0;
+  margin: auto 0;
+}
+.sign-off p {
+  margin: auto 0;
+}
+
+.blogs {
+  height: 77vh;
+  width: 100%;
+  display: flex;
+}
+
+.blogs header {
+  height: 100%;
+  width: 50%;
+}
+
+.blogs .aside {
+  margin-top: 200px;
+}
+
+.blogs .aside h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
 }

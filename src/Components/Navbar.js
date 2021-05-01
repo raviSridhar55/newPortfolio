@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from './img/logo.png';
 import './CSS/Navbar.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [inHover, setHover] = useState(false);
@@ -15,26 +15,26 @@ const Navbar = () => {
           className='box-1'
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}>
-          {inHover && <Link to='/projects-main'>Projects</Link>}
+          {inHover && <a href='/project-page'>Projects</a>}
         </div>
         <div
           className='box-2'
           onMouseEnter={() => setHover1(true)}
           onMouseLeave={() => setHover1(false)}>
-          {inHover1 && <Link to='/blogs'>Blogs</Link>}
+          {inHover1 && <a href='/blogs'>Blogs</a>}
         </div>
         <div
           className='box-3'
           onMouseEnter={() => setHover2(true)}
           onMouseLeave={() => setHover2(false)}>
-          {inHover2 && <Link to='/about-me'>About</Link>}
+          {inHover2 && <a href='/about-me'>About</a>}
         </div>
       </nav>
 
       <nav className='navbar-h'>
-        <Link to='/'>
+        <a href='/'>
           <img className='logo' src={logo} alt='logo' />
-        </Link>
+        </a>
       </nav>
     </div>
   );

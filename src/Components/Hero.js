@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Typical from 'react-typical';
 import $ from 'jquery';
 import './CSS/hero.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 class Hero extends Component {
   componentDidMount() {
     $(document).ready(function () {
@@ -28,8 +29,11 @@ class Hero extends Component {
   }
   render() {
     return (
-      <div id='hero'>
-        <div className='name-l'>
+      <div className='hero'>
+        <ScrollAnimation
+          animateIn='animate__fadeInUp'
+          animateOnce={true}
+          className='name-l'>
           <div className='my-name'>
             <h1 className='writing'>Devarakonda</h1>
             <h1 className='writing'>Venkata</h1>
@@ -55,7 +59,7 @@ class Hero extends Component {
               />
             </h3>
           </div>
-        </div>
+        </ScrollAnimation>
       </div>
     );
   }

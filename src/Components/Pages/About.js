@@ -1,7 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import Loader from '../Loader';
 
 const About = () => {
-  return <Fragment>RAVI SRIDHAR</Fragment>;
+  return (
+    <div className='about'>
+      <Loader />
+    </div>
+  );
 };
 
 export default About;
