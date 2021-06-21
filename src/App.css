@@ -1,7 +1,7 @@
 :root {
   --color-1: #3a506b;
   --color-2: #5abfbd;
-  --color-3: #70ffea;
+  --color-3: rgb(112, 255, 234);
   --background: #0b132b;
 }
 
@@ -144,4 +144,54 @@ a:hover {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+}
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, -20%);
+}
+
+.relative {
+  height: 100%;
+  position: relative;
+}
+
+textarea {
+  resize: none;
+}
+
+img {
+  user-select: none;
+}
+
+label {
+  user-select: none;
+}
+
+input {
+  border-radius: 5px;
+  padding: 0 5px;
+  border: 5px solid;
+}
+input:focus {
+  outline: none;
+  border: var(--color-2) 5px solid;
+}
+
+@media (max-width: 500px) {
+  .right {
+    left: 3%;
+    /* transform: translate(50%, 0); */
+  }
+  .left {
+    left: 0;
+    top: 0;
+    transform: translate(0, -100%);
+  }
 }

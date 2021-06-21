@@ -1,30 +1,35 @@
 import React from 'react';
-import ScrollAnimation from 'react-animate-on-scroll';
+import Poto from './img/aboutRS.jpg';
+// import ScrollAnimation from 'react-animate-on-scroll';
 
 const Goal = () => {
   return (
     <div id='goal'>
-      <div className='goal container'>
-        <div className='heading'>
-          <h2 className='heading'>goal</h2>
-          <div className='underline'></div>
+      <div className='container profile'>
+        <div className='profile-me'>
+          <h2>
+            <i class='fas fa-quote-left'></i> In 5 years I see myself as...
+          </h2>
+          <h2>
+            Full Stack Web Developer <i class='fas fa-quote-right'></i>
+          </h2>
         </div>
-        <p className='lead'>
-          <ScrollAnimation
-            animateIn='animate__pulse'
-            style={{ display: 'inline' }}>
-            <i class='fas fa-quote-left fa-2x'></i>
-          </ScrollAnimation>{' '}
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, unde
-          cupiditate, corrupti exercitationem distinctio at eius labore veniam
-          inventore tenetur quaerat, quasi cum minima asperiores officia.
-          Eligendi aliquam necessitatibus dolor.{' '}
-          <ScrollAnimation
-            animateIn='animate__pulse'
-            style={{ display: 'inline' }}>
-            <i class='fas fa-quote-right fa-2x'></i>
-          </ScrollAnimation>
-        </p>
+        {/* <div className='profile-image'>
+          <img src={Poto} alt='me' />
+        </div> */}
+        <div className='profile-image'>
+          <img src={Poto} alt='pic' />
+          <div className='descriptions'>
+            <h1>Devarakonda Venkata Ravi Sridhar</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+              sapiente?
+            </p>
+            <button>
+              <a href='/about-me'>Contact</a>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

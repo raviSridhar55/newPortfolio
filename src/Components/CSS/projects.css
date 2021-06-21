@@ -1,37 +1,112 @@
-.project-page-container {
-  height: 100vh;
+.project-page {
   /* background-color: teal; */
-  padding: 100px 10px;
+  padding-top: 100px;
 }
 
 .project-page-content {
   /* background-color: thistle; */
-  height: 100%;
-  height: 77vh;
+  /* height: 100%; */
+  height: 90vh;
   background: url(../img/Group29.png) center center/cover;
   display: grid;
   place-items: center;
+  background-attachment: fixed;
 }
 
-.project-page-title h1 {
-  font-size: 5rem;
+.work-title {
+  font-size: 6rem;
+  width: 100%;
   text-transform: uppercase;
-  width: 77%;
-  font-weight: 600;
+  user-select: none;
+  /* position: fixed; */
+  /* z-index: -1; */
 }
 
-.project-page-carousal {
-  margin-top: 50px;
+@media (max-size: 450px) {
+  .project-page .project-page-content .work-title {
+    font-size: 3rem;
+  }
+}
+
+.gif-work {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#work {
+  height: auto;
+  padding: 50px;
+  box-shadow: -1px -16px 30px 5px rgba(0, 0, 0, 0.6);
+  width: 100%;
 }
 
 .work {
-  height: 77vh;
-  width: 100vw;
-  margin-top: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.gif-link {
-  display: flex;
-  flex-direction: column;
-  width: auto;
+.left-content {
+  height: 100%;
+
+  width: 40%;
+  padding: 5px;
+}
+
+.right-content {
+  height: 100%;
+  width: 50%;
+  border: 7.5px solid #757575;
+  border-radius: 10px;
+  box-shadow: 5px 15px 40px rgba(0, 0, 0, 0.75),
+    -5px -15px 40px rgba(0, 0, 0, 0.75);
+  position: relative;
+}
+
+.right-content::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(60deg, black, white, black);
+  /* background-color: black; */
+  opacity: 0.2;
+  border-radius: 10px;
+  transition: all ease-in 500ms;
+}
+.right-content:hover::after {
+  background: linear-gradient(70deg, black, white, black);
+  /* transform: translate(-50, 0); */
+}
+
+.right-content img {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.work-1 {
+  background: rgb(255, 66, 106);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 66, 106, 1) 0%,
+    rgba(255, 76, 46, 1) 100%
+  );
+  z-index: 2;
+  background-attachment: fixed;
+}
+
+.work-2 {
+  background: rgb(35, 69, 43);
+  background: linear-gradient(
+    0deg,
+    rgb(99, 204, 123) 0%,
+    rgba(40, 167, 69, 1) 100%
+  );
 }

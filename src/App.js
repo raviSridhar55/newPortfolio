@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 200);
+    }, 3000);
   }, []);
   if (loading === false) {
     return (
@@ -41,7 +41,7 @@ function App() {
             <Route exact path='/project-page' component={Project} />
             <Route exact path='/blogs' component={Blogs} />
           </Switch>
-          {/* <Loader /> */}
+
           <Footer />
         </div>
       </Router>
